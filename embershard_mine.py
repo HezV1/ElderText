@@ -13,8 +13,8 @@ Inlaid into the incline of the path are wooden slats. A tree borders the path
 on the left and sparse shrubbery can be found on the inside of the curve of
 the path.
 """
+        OPTIONS =['follow path']
         while True:
-            OPTIONS =['follow path']
             print OPTIONS
             choice = raw_input()
             if choice == OPTIONS[0]:
@@ -27,7 +27,11 @@ the path.
 class Entrance(object):
     """class for Entrance Scene"""
     def enter(self):
-        print "Entrance text"
+        print """
+As you ascend the path and walk around the rock outcropping, the path leads
+into a clearing that widens to a length of about 20 meters. Directly ahead of
+you is
+"""
         return "death"
 
 class Death(object):
