@@ -12,5 +12,3 @@ class Engine(object):
             current_scene = self.level.next_scene(next_scene_name)
 
         current_scene.enter()
-
-    options = []
