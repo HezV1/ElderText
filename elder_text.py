@@ -4,12 +4,12 @@ print ("*** loading engine ***")
 from elder_engine import Engine
 print ("*** loading level ***")
 from world import levels
-level = raw_input('Grab Level Code')
-level_b = importlib.import_module(levels[level], 'SubLevel')
+level_code = raw_input('Grab Level Code')
+level = importlib.import_module(levels[level_code], 'SubLevel')
 
-OPTIONS = []
+options = []
 
-level_a = level_b.SubLevel()
+level_a = level.SubLevel()
 engine_a = Engine(level_a)
 engine_a.play()
 
