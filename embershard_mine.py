@@ -39,7 +39,7 @@ class Death(object):
     def enter(self):
         print "You died"
 
-class EmbershardMine(Level):
+class SubLevel(Level):
     """Class for ElderText Level"""
 
     scenes = {
