@@ -32,7 +32,7 @@ As you ascend the path and walk around the rock outcropping, the path leads
 into a clearing that widens to a length of about 20 meters. Directly ahead of
 you is
 """
-        return '1'
+        return ['1',"start"]
 
 class Death(object):
     """class for death scene"""
@@ -50,4 +50,4 @@ class SubLevel(Level):
     }
 
     opening_scene = scenes["start_path"]
-    last_scene = scenes["entrance"]
+    last_scene = [scenes["entrance"]]

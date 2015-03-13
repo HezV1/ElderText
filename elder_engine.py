@@ -7,7 +7,7 @@ class Engine(object):
         current_scene = self.level.opening_scene
         last_scene = self.level.last_scene
 
-        while current_scene != self.level.last_scene:
+        while current_scene not in self.level.last_scene:
             next_scene_name = current_scene.enter()
             current_scene = self.level.next_scene(next_scene_name)
 

@@ -35,4 +35,4 @@ class SubLevel(Level):
     }
 
     opening_scene = scenes["start"]
-    last_scene = scenes["death"]
+    last_scene = [scenes["death"]]

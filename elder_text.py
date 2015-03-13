@@ -13,9 +13,10 @@ level_a = level.SubLevel()
 engine_a = Engine(level_a)
 while True:
     level_code = engine_a.play()
-    level = importlib.import_module(levels[level_code], 'SubLevel')
+    level = importlib.import_module(levels[level_code[0]], 'SubLevel')
 
     level_a = level.SubLevel()
+    level_a.opening_scene = level_a.scenes[level_code[1]]
     engine_a.level = level_a
 
 
