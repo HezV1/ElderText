@@ -11,4 +11,4 @@ class Engine(object):
             next_scene_name = current_scene.enter()
             current_scene = self.level.next_scene(next_scene_name)
 
-        current_scene.enter()
+        return current_scene.enter()

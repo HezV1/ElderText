@@ -32,12 +32,13 @@ As you ascend the path and walk around the rock outcropping, the path leads
 into a clearing that widens to a length of about 20 meters. Directly ahead of
 you is
 """
-        return "death"
+        return '1'
 
 class Death(object):
     """class for death scene"""
     def enter(self):
         print "You died"
+        exit()
 
 class SubLevel(Level):
     """Class for ElderText Level"""
@@ -49,4 +50,4 @@ class SubLevel(Level):
     }
 
     opening_scene = scenes["start_path"]
-    last_scene = scenes["death"]
+    last_scene = scenes["entrance"]

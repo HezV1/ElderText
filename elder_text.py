@@ -11,7 +11,14 @@ options = []
 
 level_a = level.SubLevel()
 engine_a = Engine(level_a)
-engine_a.play()
+while True:
+    level_code = engine_a.play()
+    level = importlib.import_module(levels[level_code], 'SubLevel')
+
+    level_a = level.SubLevel()
+    engine_a.level = level_a
+
+
 
 
 

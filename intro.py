@@ -1,24 +1,31 @@
-from elder_level import level
+from elder_level import Level
 from sys import exit
 
 class Start(object):
-    """class for Start Scene"""
+    """Class for Start Scene"""
     def enter(self):
-        print "Start Text"
+        print """
+You come to staring at a wooden floor. You can feel your body jostling, as you
+lift your head you realize you are on a cart being pulled by a horse. The cart
+has two benches on either side, the cart fits 2 on the benches. You sit on the
+front left position. A nord sits across from you dressed in blue leather s
+
+        """
         return "character_creation"
 
 class CharacterCreation(object):
-    """class for CharacterCreation Scene"""
+    """Class for CharacterCreation Scene"""
     def enter(self):
         print "CharacterCreation Text"
         return "death"
 
 class Death(object):
-    """class for Death Scene"""
+    """Class for Death Scene"""
     def enter(self):
         print "You died"
+        exit()
 
-class Intro(Level):
+class SubLevel(Level):
     """Class for Intro Level"""
 
     scenes = {
