@@ -38,12 +38,12 @@ has a wrap tied tightly around his mouth.
 "Empire was nice and lazy. If they hadn't been looking for you, id have stolen
 that horse and be halfway
 to Hammerfel." The thief looks at you and says,
-"You there, you and me, we shouldn't be here it's these stormcloaks the empire
+"You there, you and me, we shouldn't be here it's these Stormcloaks the empire
 wants."
 
 "Were all brothers and sisters in binds now, thief," said the blonde nord.
 
-The guard driving the cart shouts, "Shut up back
+The guard driving the cart shouts, "Shut up back there"
 
         """
         return "character_creation"
