@@ -1,4 +1,4 @@
 levels = {
-    '1':'intro',
-    '2':'embershard_mine'
+    '1':'eldertext.intro',
+    '2':'eldertext.embershard_mine'
 }

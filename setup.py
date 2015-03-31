@@ -1,5 +1,8 @@
+import ez_setup
+ez_setup.use_setuptools()
+
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup
 
@@ -12,7 +15,8 @@ config = {
     'version': '0.1',
     'install_requires': ['nose'],
     'packages': ['eldertext'],
-    'scripts': [],
+    'entry_points': {'console_scripts': [
+        'eldertext = eldertext.__main__:main']},
     'name': 'eldertext'
 }
 
